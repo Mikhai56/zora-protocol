@@ -37,7 +37,7 @@
   "dependencies": {},
   "devDependencies": {
     "@lavamoat/preinstall-always-fail": "2.0.0",
-    "@openzeppelin/contracts": "4.9.2",
+    "@openzeppelin/contracts": "4.9.6",
     "@types/node": "^20.1.2",
     "@wagmi/cli": "^1.0.1",
     "@zoralabs/openzeppelin-contracts-upgradeable": "4.8.4",
@@ -48,7 +48,7 @@
     "forge-std": "https://github.com/foundry-rs/forge-std#705263c95892a906d7af65f0f73ce8a4a0c80b80",
     "glob": "^10.2.2",
     "solmate": "6.1.0",
-    "tsup": "^7.2.0",
+    "tsup": "^8.3.5",
     "tsx": "^3.13.0",
     "typescript": "^5.2.2",
     "@zoralabs/tsconfig": "workspace:^",
