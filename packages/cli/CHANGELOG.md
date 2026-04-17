@@ -1,5 +1,29 @@
 # @zoralabs/cli
 
+## 1.0.2
+
+### Patch Changes
+
+- 24c4a7c: Decode Solidity revert errors into friendly trade messages
+  - Replace opaque "Execution reverted" messages with actionable guidance for 17 known contract errors
+  - Fix RPC transport to preserve JSON-RPC error code/data for proper viem error classification
+
+- 366b21a: Auto-detect coin type on sell when only one is held
+  - When both a creator-coin and trend share the same name, the sell command now checks the user's balance and auto-selects the one they hold
+  - If the user holds both or neither, the existing disambiguation error is shown
+
+- aedd015: `zora balance` and `zora balance coins` updates:
+  - Add Type column showing coin type (post, creator-coin, trend) in table and JSON output
+  - Add truncated Address column
+  - Remove Symbol column
+  - Add arrow key row selection and Enter/c to copy coin address in live mode
+
+  Balance and explore shared improvements:
+  - Post coins without names now show truncated address as name
+
+- b58d57e: Add arrow key navigation and Enter to copy address in explore command
+- 36657cd: Show PATH configuration instructions after global install when npm bin directory is not in PATH
+
 ## 1.0.1
 
 ### Patch Changes
